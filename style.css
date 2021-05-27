@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo {
+    height: 100px;
+    width: 300px;
+}
+
+.logo.nav-logo {
+    height: 100px;
+    width: 200px;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+}
+
+i {
+    color: grey;
+}
+
+.open-btn {
+    position: fixed;
+    top: 20px;
+    left: 30px;
+}
+
+.nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-140%);
+    transition: transform .3s ease-in-out;
+    margin: 0;
+    padding: 40px;
+}
+
+.nav.visible {
+    transform: translateX(0%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+.nav.nav-black {
+    background-color: black;
+    width: 30%;
+    transition-delay: .4s;
+}
+
+.nav.nav-red {
+    background-color: red;
+    width: 95%;
+    transition-delay: .3s;
+}
+
+.nav.nav-white {
+    background-color: white;
+    width: 95%;
+    transition-delay: .1s;
+}
+
+.nav.nav-black.visible {
+    transition-delay: .1s;
+}
+
+.nav.nav-red.visible {
+    transition-delay: .3s;
+}
+
+.nav.nav-white.visible {
+    transition-delay: .4s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 15px;
+}
